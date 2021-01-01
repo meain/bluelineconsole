@@ -5,7 +5,7 @@
     <color name="textOnFrame">#FFFFFF</color>
     <color name="colorFrame">#000000</color>
     <color name="colorBackgroundOfCommand">#000000</color>
-    <color name="baseBackground">#040404</color>
+    <color name="baseBackground">#000000</color>
     <color name="colorPrimary">#D8DDF9</color>
     <color name="colorPrimaryDark">#A3A7C4</color>
 </resources>

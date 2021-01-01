@@ -19,22 +19,24 @@
         android:background="@color/colorFrame"
         android:animateLayoutChanges="true"
         >
+
         <EditText
             android:id="@+id/mainInputText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:textSize="40sp"
-            android:padding="12sp"
-            android:textCursorDrawable="@null"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:animateLayoutChanges="true"
             android:background="@color/baseBackground"
             android:imeOptions="actionGo|flagForceAscii|flagNoExtractUi|flagNoFullscreen"
-            android:animateLayoutChanges="true"
-            >
-            <requestFocus/>
+            android:inputType="text"
+            android:padding="12sp"
+            android:textColor="#FFFFFF"
+            android:textCursorDrawable="@null"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <requestFocus />
         </EditText>
     </LinearLayout>
     <LinearLayout
