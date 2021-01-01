@@ -6,6 +6,7 @@ import net.nhiroki.bluelineconsole.commandSearchers.ApplicationCommandSearcher;
 import net.nhiroki.bluelineconsole.commandSearchers.CalculatorCommandSearcher;
 import net.nhiroki.bluelineconsole.commandSearchers.DateCommandSearcher;
 import net.nhiroki.bluelineconsole.commandSearchers.HelpCommandSearcher;
+import net.nhiroki.bluelineconsole.commandSearchers.LinkOpenCommandSearcher;
 import net.nhiroki.bluelineconsole.commandSearchers.PreferencesCommandSearcher;
 import net.nhiroki.bluelineconsole.commandSearchers.SearchEngineCommandSearcher;
 import net.nhiroki.bluelineconsole.commandSearchers.URICommandSearcher;
@@ -30,6 +31,7 @@ public class CommandSearchAggregator {
         // First character is limited
         commandSearcherList.add(new CalculatorCommandSearcher());
         commandSearcherList.add(new SearchEngineCommandSearcher());
+        commandSearcherList.add(new LinkOpenCommandSearcher());
 
         // Command searchers which may return tons candidate should comes to the last
         commandSearcherList.add(new ApplicationCommandSearcher(context));
